@@ -10,7 +10,7 @@ class ORouter():
         ]
         self.useFixApi = useFixApi
 
-    def parseOrder(self, ticker):
+    def parseOrder(self, ticker, side):
         """
             BTC-28APR23-28000-P
         """
@@ -19,7 +19,8 @@ class ORouter():
             'underlying': S,
             'tte': T,
             'strike': K,
-            'cp': _d
+            'cp': _d,
+            'side': side
         }
 
     def sendOrder():
@@ -29,4 +30,11 @@ class ORouter():
         pass
 
     def sendOrderToPost():
+        pass
+
+
+    def _sellOrder(self):
+        pass
+
+    def _buyOrder(self):
         pass
